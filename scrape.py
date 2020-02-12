@@ -45,3 +45,4 @@ feed = Feed(
 print(feed.rss())
 
 # https://podgen.readthedocs.io/en/latest/
+# https://podba.se/validate/#
