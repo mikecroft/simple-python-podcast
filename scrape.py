@@ -1,7 +1,6 @@
 import requests
 import datetime
 from bs4 import BeautifulSoup
-from rfeed import *
 from podgen import Podcast, Episode, Media
 
 def processDate(datestring):
@@ -50,16 +49,3 @@ p.episodes = items
 rss = p.rss_str()
 
 print(rss)
-
-# feed = Feed(
-#         title = "talks cast",
-#         link = "https://www.allsaintsworcester.org.uk/talks",
-#         description = "",
-#         language = "en-GB",
-#         lastBuildDate = datetime.datetime.now(),
-#         items = items)
- 
-# print(feed.rss())
-
-# https://podgen.readthedocs.io/en/latest/
-# https://podba.se/validate/#
